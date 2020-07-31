@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" href="#">{{title}}</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/photos/upload']">
+          Upload New <img src="/assets/add.png" width="15px" height="15px" title="Add Photo">
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

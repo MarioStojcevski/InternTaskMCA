@@ -1,0 +1,15 @@
+<div class="container">
+    <ul>
+        <div class="row">
+          <div *ngFor="let photo of photos" class="col-md-4">
+            <a [routerLink]="['/photos', photo.id]">
+            <img [src]='photo.thumbnailUrl'
+                 [title]='photo.title'
+                 [style.margin.px] ='imageMargin'
+                 [style.width.px] = 'imageWidth'
+                 >
+            </a>
+          </div>
+        </div>
+    </ul>
+</div>
